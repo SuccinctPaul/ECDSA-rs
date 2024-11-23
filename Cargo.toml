@@ -1,0 +1,17 @@
+[package]
+name = "ECDSA-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-ec = { version = "0.4.2", features = ["std"] }
+ark-ff = { version = "0.4.2", features = ["std"] }
+ark-std = { version = "0.4.0", default-features = false }
+ark-bn254 = { version = "0.4.0", features = ["curve"] }
+
+tiny-keccak = { version = "2.0", features = ["keccak"] }
+blake3 = "1.5.4"
+
+
+num-traits = "0.2.19"
+num-bigint = { version = "0.4.4", features = ["rand"] }
